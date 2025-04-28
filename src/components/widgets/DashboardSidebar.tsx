@@ -28,7 +28,7 @@ const DashboardSidebar = () => {
         </div>
         <div className="bg-[#c4c1c1] px-2 py-3 h-[50%] rounded-xl flex flex-col items-center justify-center">
             <div className="rounded-full border-8 size-40 border-white text-sm flex flex-col items-center justify-center ">
-               <h3 className="font-bold text-2xl">Score {score?.result} </h3>
+               <h3 className="font-bold text-2xl">Score {score?.result}% </h3>
             </div>
         </div>
         
