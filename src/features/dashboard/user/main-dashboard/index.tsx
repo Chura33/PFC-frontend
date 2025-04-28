@@ -40,7 +40,7 @@ const UserDashboard = () => {
 
   //initial form value
   const initialValues: NewEntriesI = {
-    date: '2025-04-27',
+    date: formattedDate,
     watchedPorn: "",
     relapseDetails: "",
     notes: "",
