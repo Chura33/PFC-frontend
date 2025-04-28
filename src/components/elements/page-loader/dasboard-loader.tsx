@@ -28,9 +28,9 @@ export const CardSkeleton = () => {
                 </div>
             ))}
         </div>
-        <div className="mt-3 md:hidden grid grid-cols-1 gap-y-8">
+        <div className="mt-3 md:hidden grid grid-cols-1 gap-y-3">
             {Array(10).fill(0).map((item,index) => (
-                <div key={`${index}${item}`} className="flex w-full  wave-effect items-center justify-between border-l ">
+                <div key={`${index}${item}`} className="flex flex-col gap-y-3 w-full  wave-effect ">
                     <ShortHeader/>
                     <ShortHeader/>
                   

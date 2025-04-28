@@ -134,23 +134,20 @@ const UserDashboard = () => {
             )}
           </section>
           <section className="flex flex-col mt-4">
-            <SelectDropdown
-              label="Relapse Details"
-              options={[
-                { value: "I seeked porn", label: "I seeked porn" },
-                { value: "I consumed porn", label: "I consumed porn" },
-              ]}
-              name="relapseDetails"
-              onChange={(selected: any) =>
-                setFieldValue("relapseDetails", selected.value)
-              }
-              customStyle="10px"
-            />
+          <TextArea
+            label="Relapse Details"
+            value={values.relapseDetails}
+            textAreaName="relapseDetails"
+            onChange={handleChange}
+            placeholder="Enter relapse details..."
+           
+          />
+          
             {errors.relapseDetails && touched.relapseDetails && (
               <p className="text-red-500">{errors.relapseDetails}</p>
             )}
           </section>
-          <section className="flex flex-col mt-4"></section>
+          <section className="flex flex-col mt-4">
           <TextArea
             label="Others"
             value={values.notes}
@@ -163,6 +160,7 @@ const UserDashboard = () => {
           {errors.notes && touched.notes && (
               <p className="text-red-500">{errors.notes}</p>
             )}
+            </section>
           <section>
             <button
               type="submit"
