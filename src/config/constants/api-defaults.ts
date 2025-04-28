@@ -1,0 +1,1 @@
+export const AUTH_TOKEN = '__WEB_APP_AGP345####agp_careers'
