@@ -1,7 +1,8 @@
 import { useQuery } from "@tanstack/react-query"
 import { AxiosError } from "axios"
 import client from "../client"
-import { _handleAxiosError } from "@/services/request.service"
+import { _handleAxiosError } from "../../services/request.service"
+
 
 
 export interface ConfigResponseI {
