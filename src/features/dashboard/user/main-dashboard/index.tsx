@@ -29,7 +29,7 @@ const UserDashboard = () => {
 
   const todayDate = new Date();
   const convert = todayDate.toLocaleDateString();
-  const [month, day, year] = convert.split("/");
+  const [day, month, year] = convert.split("/");
   const formattedDate = `${year}-${month.padStart(2, "0")}-${day.padStart(
     2,
     "0"
