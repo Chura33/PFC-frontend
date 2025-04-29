@@ -35,7 +35,7 @@ const DashboardSummary = ({ isFetching }: { isFetching: boolean }) => {
       <div className="bg-white md:w-full px-2 py-3 h-[15rem] rounded-xl flex flex-col items-center justify-center">
         <div className="rounded-full border-8 size-[10rem] border-[#c4c1c1] text-sm flex flex-col items-center justify-center ">
           <h3 className="font-bold text-2xl">
-            Score {score?.result ? Number(score.result).toFixed() : "0"}%{" "}
+            Score {score?.result ? Math.ceil(Number(score.result)) : "0"}%{" "}
           </h3>
         </div>
       </div>
