@@ -111,5 +111,20 @@ export const useGetUser = () => {
     return getScore
   }
 
+  export const useGetStartDate = () => {
+    const getStartDate = useQuery<{start:string}, AxiosError>({
+      queryKey: ['get-startDate'],
+      queryFn: async () => {
+        try {
+          const response = await client.get('tracker/start')
+          return response?.data
+        } catch (error) {
+          throw error
+        }
+      },
+    })
+    return getStartDate
+  }
+
 
   
