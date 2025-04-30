@@ -25,7 +25,7 @@ const DashboardSummary = ({ isFetching }: { isFetching: boolean }) => {
             {startDate?.start
               ? Math.ceil(
                   (new Date().setHours(0, 0, 0, 0) -
-                    new Date(startDate.start).setHours(0,0,0,0)) /
+                    new Date(startDate.start).setHours(0, 0, 0, 0)) /
                     (1000 * 60 * 60 * 24)
                 )
               : ""}
